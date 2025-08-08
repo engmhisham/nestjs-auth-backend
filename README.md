@@ -69,9 +69,6 @@ FRONTEND_URL=http://localhost:5173
 # Install dependencies
 npm install
 
-# Run database migrations
-npm run typeorm:migration:run
-
 # Start development server
 npm run start:dev
 ```
@@ -104,9 +101,9 @@ npm run test:e2e
 ---
 
 ## Default Roles
-When the database is seeded, the following roles are available:
-- **admin**
-- **user**
+When the application starts for the first time, the following roles are automatically seeded:
+- **admin** (full permissions)
+- **user** (basic permissions)
 
 ---
 
